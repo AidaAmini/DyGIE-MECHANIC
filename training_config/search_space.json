@@ -1,0 +1,15 @@
+{
+   "LEARNING_RATE": {
+        "sampling strategy": "loguniform",
+        "bounds": [1e-5, 1e-2]
+    },
+    "HIDDEN_SIZE": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    },
+    "DROPOUT": {
+        "sampling strategy": "uniform",
+        "bounds": [0, 0.5]
+    }
+
+}
