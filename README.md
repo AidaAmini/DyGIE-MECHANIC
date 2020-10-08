@@ -13,6 +13,16 @@ We provide two annotated datasets:
 COFIE is available in `data/cofie/[train,dev,test].json`. The gold labeled data of dev and test sets for evaluation is in `cofie-gold/[dev,test]-gold.tsv`
 COFIE-G is in `data/cofie-t/split/[train,dev,test].json`. Gold labels are in `cofie-t-gold/[dev,test]-gold.tsv`
 
+## Pretrained models 
+We provide models pre-trained on COFIE and COFIE-G data available. 
+
+### Downloads 
+
+Run `scripts/pretrained/get_cofie_pretrained.sh` to download all the available pretrained models to the `pretrained` directory. If you only want one model, here are the download links.
+
+- [Coarse relation prediction model](https://ai2-s2-cofie.s3-us-west-2.amazonaws.com/models/binary-model.tar.gz)
+- [Granular relation prediction model](https://ai2-s2-cofie.s3-us-west-2.amazonaws.com/models/ternary-model.tar.gz)
+
 ## Table of Contents
 - [Dependencies](#dependencies)
 - [Pretrained models](#Pretrained-models)
@@ -34,16 +44,6 @@ This library relies on [AllenNLP](https://allennlp.org) and uses AllenNLP shell 
 We use the [Allentune](ttps://github.com/allenai/allentune) for hyperparameter search. For installing a compatible version of the Allentune library, please download the allentune git repo outside of dygiepp directory using : `git clone https://github.com/allenai/allentune.git`, then replace the files provided in this repository using command `cp -r allentune_files/ [location of downloaded allentune]`. The you can proceed with installing allentune by running `pip install --editable .` in allentune downloaded folder.
 
 After installing allentune please proceed with installing required libraries for DyGIE++. The necessary dependencies can be installed with `pip install -r requirements.txt`.
-
-## Pretrained models 
-We provide models pre-trained on COFIE and COFIE-G data available. 
-
-### Downloads 
-
-Run `scripts/pretrained/get_cofie_pretrained.sh` to download all the available pretrained models to the `pretrained` directory. If you only want one model, here are the download links.
-
-- [Coarse relation prediction model](https://ai2-s2-cofie.s3-us-west-2.amazonaws.com/models/binary-model.tar.gz)
-- [Granular relation prediction model](https://ai2-s2-cofie.s3-us-west-2.amazonaws.com/models/ternary-model.tar.gz)
 
 
 ## Making predictions on existing datasets 
