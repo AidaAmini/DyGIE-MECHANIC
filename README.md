@@ -1,13 +1,18 @@
-This code repository is adapted from [DYGIE++](https://github.com/dwadden/dygiepp/blob/allennlp-v1), [Wadden 2019.](https://www.semanticscholar.org/paper/Entity%2C-Relation%2C-and-Event-Extraction-with-Span-Wadden-Wennberg/fac2368c2ec81ef82fd168d49a0def2f8d1ec7d8)
-# COFIE / COFIE-t datasets --Done
-You can find the labeled data related to COFIE in data/cofie/[train,dev,test].json. The gold labeled data of dev and test sets for evaluation purposes is in cofie-gold/[dev,test]-gold.tsv
-The labeled data showing triple relations with trigger words for COFIE-t dataset is located in data/cofie-t/split/[train,dev,test].json.  The gold labeled data of dev and test sets for evaluation purposes is in cofie-t-gold/[dev,test]-gold.tsv
+
+# COFIE: COVID-19 Open Functional Information Extraction
+
+This repository contains models, datasets and experiments described in [Extracting a Knowledge Base of Mechanisms from COVID-19 Papers](TBA)
+
+# COFIE / COFIE-G datasets
+We provide two annotated datasets:
+- COFIE: Coarse-grained mechanism relations (`Direct` and `Indirect`)
+- COFIE-G: Granular mechanism relations (`subject-predicate-object`)
+
+COFIE is available in data/cofie/[train,dev,test].json. The gold labeled data of dev and test sets for evaluation is in cofie-gold/[dev,test]-gold.tsv
+COFIE-G is in data/cofie-t/split/[train,dev,test].json. Gold labels are in cofie-t-gold/[dev,test]-gold.tsv
 
 
-# DyGIE++COIFE --Done
-
-**USABILITY**: This branch is an ongoing update of the DyGIE++ code to play nicely with AllenNLP V1 and allentune Library.
-Implements the model described in the paper [Entity, Relation, and Event Extraction with Contextualized Span Representations](https://www.semanticscholar.org/paper/Entity%2C-Relation%2C-and-Event-Extraction-with-Span-Wadden-Wennberg/fac2368c2ec81ef82fd168d49a0def2f8d1ec7d8).
+# DyGIE++COIFE
 
 
 ## Table of Contents
@@ -21,7 +26,8 @@ Implements the model described in the paper [Entity, Relation, and Event Extract
 - [Contact](#contact)
 
 
-## Dependencies --Done
+## Dependencies
+This code repository is forked from [DYGIE++](https://github.com/dwadden/dygiepp/blob/allennlp-v1), [Wadden 2019.](https://www.semanticscholar.org/paper/Entity%2C-Relation%2C-and-Event-Extraction-with-Span-Wadden-Wennberg/fac2368c2ec81ef82fd168d49a0def2f8d1ec7d8)
 
 This code was developed using Python 3.7. To create a new Conda environment using Python 3.7, do `conda create --name cofie python=3.7`.
 
@@ -34,10 +40,10 @@ The necessary dependencies can be installed with `pip install -r requirements.tx
 This library relies on [AllenNLP](https://allennlp.org) and uses AllenNLP shell [commands](https://docs.allennlp.org/master/#package-overview) to kick off training, evaluation, and testing.
 
 
-## Pretrained models --Done
+## Pretrained models 
 We have the models trained on COFIE (binary relations) and COFIE-t (ternary relations) data available. 
 
-### Downloads --Done
+### Downloads 
 
 Run `scripts/pretrained/get_cofie_pretrained.sh` to download all the available pretrained models to the `pretrained` directory. If you only want one model, here are the download links.
 
@@ -45,7 +51,7 @@ Run `scripts/pretrained/get_cofie_pretrained.sh` to download all the available p
 - [Ternary relation prediction model](https://ai2-s2-cofie.s3-us-west-2.amazonaws.com/models/ternary-model.tar.gz)
 
 
-## Making predictions on existing datasets --Done
+## Making predictions on existing datasets 
 -- option[1]
 To make a prediction, you can use `allennlp predict`. For example, to make a prediction with the pretrained scierc model, you can do:
 
@@ -89,7 +95,7 @@ python predict_ternary.py --data_dir data/cofie-t/collated --device 0 --serial_d
 for ternary relation predictions and 
 
 
-### Relation extraction evaluation metric --Done
+### Relation extraction evaluation metric 
 
 We report P/R/F1 metrics measured by using exact and partial matching metrics. A relation is selected as correct if both sides of a relation match by the chosen metric with a relation from gold set.
 The relaton metircs are :
@@ -103,7 +109,7 @@ For binary relation task : We report the scores of two task of relation identifi
 For ternary relation task : We consider the third argument as label of the relation and therefore we report relation identification and relation classification tasks. 
 
 
-### Training with Allentune --Done
+### Training with Allentune 
 By using Allentune librrary alongside with Dygie, we are able to implement a greed search for hyperparameter tuning. In our experince the using Allentune can significantly improve the results.
 To train a model for binary relation prediction using Allentune, you can run the script below. 
 
@@ -120,7 +126,7 @@ python scripts/train/train_event_allentune.py --data_dir data/processed/collated
 The default number of training samples is set to 30. For more traning option please use --h command.
 
 
-### Running prediction for models trained with Allentune --Done
+### Running prediction for models trained with Allentune 
 You can use the script provided in this library to predict the relation for all the runs saved in a directory for development set and specify a best training index for predicting over test set once you find the best training parameters.
 To run the prediction for development set over all the trained models you can run :
 ```bash 
@@ -146,8 +152,4 @@ python predict_event_allentune.py --serial_dir ./models/cofie-t --data_dir ./dat
 ```
 for ternary relation model.
 
-### Running evaluations for predictions of Allentune trained models--Done
-Same as getting the 
 
-# Contact --Done
-For questions or problems with the code, create a GitHub issue, email amini91@cs.washington.edu or tomh@allenai.org.
