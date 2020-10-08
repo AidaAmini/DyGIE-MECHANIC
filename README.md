@@ -14,7 +14,7 @@ COFIE is available in `data/cofie/[train,dev,test].json`. The gold labeled data 
 COFIE-G is in `data/cofie-t/split/[train,dev,test].json`. Gold labels are in `cofie-t-gold/[dev,test]-gold.tsv`
 
 ## Pretrained models 
-We provide models pre-trained on COFIE and COFIE-G data available. 
+We provide models pre-trained on COFIE and COFIE-G.
 
 ### Downloads 
 
@@ -25,8 +25,6 @@ Run `scripts/pretrained/get_cofie_pretrained.sh` to download all the available p
 
 ## Table of Contents
 - [Dependencies](#dependencies)
-- [Pretrained models](#Pretrained-models)
-- [Downloads](#downloads)
 - [Making predictions on existing datasets](#making-predictions-on-existing-datasets)
 - [Relation extraction evaluation metric](#relation-extraction-evaluation-metric)
 - [Training with Allentune](#training-with-allentune)
