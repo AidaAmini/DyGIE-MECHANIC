@@ -8,6 +8,10 @@ We provide two annotated datasets:
 - COFIE: Coarse-grained mechanism relations (`Direct` and `Indirect`)
 - COFIE-G: Granular mechanism relations (`subject-predicate-object`)
 
+![COFIE](https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE.png)
+![COFIE-G](https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE-G.png)
+
+
 COFIE is available in data/cofie/[train,dev,test].json. The gold labeled data of dev and test sets for evaluation is in cofie-gold/[dev,test]-gold.tsv
 COFIE-G is in data/cofie-t/split/[train,dev,test].json. Gold labels are in cofie-t-gold/[dev,test]-gold.tsv
 
