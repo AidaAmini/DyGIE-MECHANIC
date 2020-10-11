@@ -2,18 +2,16 @@
 # COFIE: COVID-19 Open Functional Information Extraction
 
 This repository contains models, datasets and experiments described in [Extracting a Knowledge Base of Mechanisms from COVID-19 Papers](https://arxiv.org/pdf/2010.03824.pdf).
+<img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE.png" width="500" height="500"> <img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE-G.png" width="400" height="320">
+
+* Please cite our paper if you use our datasets or models in your project. See the [BibTeX](#citation). 
+* Feel free to [email us](#contact-us)
 
 # COFIE / COFIE-G datasets
 We provide two annotated datasets:
 - COFIE: Coarse-grained mechanism relations (`Direct` and `Indirect`)
 - COFIE-G: Granular mechanism relations (`Subject-Predicate-Object`)
 
-<img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE.png" width="500" height="500"> <img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE-G.png" width="400" height="320">
-
-* Please cite our paper if you use our datasets or models in your project. See the [BibTeX](#citation). 
-* Feel free to [email us](#contact-us)
-
-## Datasets
 * `COFIE` is available in `data/cofie/[train,dev,test].json`. The gold labeled data of dev and test sets for evaluation is in `cofie-gold/[dev,test]-gold.tsv`
 * `COFIE-G` is in `data/cofie-t/split/[train,dev,test].json`. Gold labels are in `cofie-t-gold/[dev,test]-gold.tsv`
 
