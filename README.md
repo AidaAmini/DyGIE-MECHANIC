@@ -10,11 +10,13 @@ We provide two annotated datasets:
 
 <img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE.png" width="500" height="500"> <img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE-G.png" width="400" height="320">
 
-COFIE is available in `data/cofie/[train,dev,test].json`. The gold labeled data of dev and test sets for evaluation is in `cofie-gold/[dev,test]-gold.tsv`
-COFIE-G is in `data/cofie-t/split/[train,dev,test].json`. Gold labels are in `cofie-t-gold/[dev,test]-gold.tsv`
-
 * Please cite our paper if you use our datasets or models in your project. See the [BibTeX](#citation). 
 * Feel free to [email us](#contact-us)
+
+## Datasets
+* `COFIE` is available in `data/cofie/[train,dev,test].json`. The gold labeled data of dev and test sets for evaluation is in `cofie-gold/[dev,test]-gold.tsv`
+* `COFIE-G` is in `data/cofie-t/split/[train,dev,test].json`. Gold labels are in `cofie-t-gold/[dev,test]-gold.tsv`
+
 
 ## Pretrained models
 We provide models pre-trained on COFIE and COFIE-G.
