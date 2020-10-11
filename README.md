@@ -1,7 +1,7 @@
 
 # COFIE: COVID-19 Open Functional Information Extraction
 
-This repository contains models, datasets and experiments described in [Extracting a Knowledge Base of Mechanisms from COVID-19 Papers](TBA).
+This repository contains models, datasets and experiments described in [Extracting a Knowledge Base of Mechanisms from COVID-19 Papers](https://arxiv.org/pdf/2010.03824.pdf).
 
 # COFIE / COFIE-G datasets
 We provide two annotated datasets:
@@ -12,6 +12,9 @@ We provide two annotated datasets:
 
 COFIE is available in `data/cofie/[train,dev,test].json`. The gold labeled data of dev and test sets for evaluation is in `cofie-gold/[dev,test]-gold.tsv`
 COFIE-G is in `data/cofie-t/split/[train,dev,test].json`. Gold labels are in `cofie-t-gold/[dev,test]-gold.tsv`
+
+* Please cite our paper if you use our datasets or models in your project. See the [BibTeX](#citation). 
+* Feel free to [email us](#contact-us)
 
 ## Pretrained models
 We provide models pre-trained on COFIE and COFIE-G.
@@ -141,3 +144,25 @@ for coarse relations and
 python predict_event_allentune.py --serial_dir ./models/cofie-t --data_dir ./data/cofie-t/ --pred_dir ./predictions/cofie-t --test_data --test_index 17
 ```
 for granular relations.
+
+
+## Citation
+
+If using our dataset and models, please cite:
+
+```
+@inproceedings{amini-hope-2020-cofie,
+    title={{Extracting a Knowledge Base of Mechanisms from COVID-19 Papers
+}},
+    author={Tom Hope and Aida Amini and David Wadden and Madeleine van Zuylen and E. Horvitz and Roy Schwartz and Hannaneh Hajishirzi},
+    year={2020},
+    url={https://arxiv.org/pdf/2010.03824.pdf}
+}
+```
+
+## Contact us
+
+Please don't hesitate to reach out.
+
+**Email:** `{tomh}@allenai.org`, `amini91@cs.washington.edu`
+
