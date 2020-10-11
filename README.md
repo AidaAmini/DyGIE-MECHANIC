@@ -6,7 +6,7 @@ This repository contains models, datasets and experiments described in [Extracti
 <img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE.png" width="400" height="400"> <img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE-G.png" width="350" height="300" style="vertical-align: top;">
 
 * Please cite our paper if you use our datasets or models in your project. See the [BibTeX](#citation). 
-* Feel free to [email us](#contact-us)
+* Feel free to [email us](#contact-us).
 
 # COFIE / COFIE-G datasets
 We provide two annotated datasets:
