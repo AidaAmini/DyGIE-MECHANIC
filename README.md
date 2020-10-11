@@ -165,5 +165,5 @@ If using our dataset and models, please cite:
 
 Please don't hesitate to reach out.
 
-**Email:** `{tomh}@allenai.org`, `amini91@cs.washington.edu`
+**Email:** `tomh@allenai.org`, `amini91@cs.washington.edu`
 
