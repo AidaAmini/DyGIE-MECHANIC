@@ -13,8 +13,8 @@ We provide two annotated datasets:
 - COFIE: Coarse-grained mechanism relations (`Direct` and `Indirect`)
 - COFIE-G: Granular mechanism relations (`Subject-Predicate-Object`)
 
-* `COFIE` is available in `data/cofie/[train,dev,test].json`. The gold labeled data of dev and test sets for evaluation is in `cofie-gold/[dev,test]-gold.tsv`
-* `COFIE-G` is in `data/cofie-t/split/[train,dev,test].json`. Gold labels are in `cofie-t-gold/[dev,test]-gold.tsv`
+* `COFIE` is available in `data/cofie/[train,dev,test].json`. The gold labeled data of dev and test sets for evaluation is in `data/cofie-gold/[dev,test]-gold.tsv`
+* `COFIE-G` is in `data/cofie-g/split/[train,dev,test].json`. Gold labels are in `data/cofie-g-gold/[dev,test]-gold.tsv`
 
 
 ## Pretrained models
@@ -67,11 +67,11 @@ To make a prediction, you can use `allennlp predict`. For example, to make a pre
 
 ```bash
 allennlp predict pretrained/ternary-model.tar.gz \
-    data/cofie/split//test.json \
+    data/cofie-g/split/test.json \
     --predictor dygie \
     --include-package dygie \
     --use-dataset-reader \
-    --output-file predictions/cofie-t-test.jsonl \
+    --output-file predictions/cofie-g-test.jsonl \
     --cuda-device 0 \
     --silent
 ```
@@ -100,7 +100,7 @@ python predict_binary.py --data_dir data/cofie --device 0 --serial_dir pretraine
 for coarse relation predictions and
 
 ```bash
-python predict_ternary.py --data_dir data/cofie-t/collated --device 0 --serial_dir pretrained/ternary-model.tar.gz  --pred_dir predictions/cofie-t-test/
+python predict_ternary.py --data_dir data/cofie-g/collated --device 0 --serial_dir pretrained/ternary-model.tar.gz  --pred_dir predictions/cofie-t-test/
 ```
 for granular relation predictions.
 
