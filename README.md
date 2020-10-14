@@ -13,8 +13,8 @@ We provide two annotated datasets:
 - COFIE: Coarse-grained mechanism relations (`Direct` and `Indirect`)
 - COFIE-G: Granular mechanism relations (`Subject-Predicate-Object`)
 
-* `COFIE` is available in `data/cofie/[train,dev,test].json`. The gold labeled data of dev and test sets for evaluation is in `data/cofie-gold/[dev,test]-gold.tsv`
-* `COFIE-G` is in `data/cofie-g/split/[train,dev,test].json`. Gold labels are in `data/cofie-g-gold/[dev,test]-gold.tsv`
+* `COFIE` is available in `data/cofie/[train,dev,test].json`. Development and test sets for are also available in tabular format: `data/cofie-gold/[dev,test]-gold.tsv`
+* `COFIE-G` is in `data/cofie-g/split/[train,dev,test].json`. Tabular format:`data/cofie-g-gold/[dev,test]-gold.tsv`
 
 
 ## Pretrained models
