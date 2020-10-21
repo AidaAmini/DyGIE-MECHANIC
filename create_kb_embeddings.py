@@ -11,8 +11,6 @@ from datetime import datetime
 from tqdm import tqdm
 import pickle
 
-from task_queries import query_ai_uses, query_scifact
-from KG_search_utils import get_similar_spans,get_sim,get_retrieved_rels_table, get_results
 
 """python create_kb_embeddings.py --predictions_path ../complete_KB_coref.tsv --embeddings_index_path distil_embedding_index""" 
 if __name__ == '__main__':
