@@ -21,7 +21,7 @@ if __name__ == '__main__':
                         type=Path,
                         help='path/name of sentence transformer model. could be created with training_multi-task.py. Should be something like ../biomed_roberta_base-2020-06-18_00-15-06/0_Transformer. ',
                         default="sentence-transformers/'distilroberta-base-paraphrase-v1",
-                        required=True)
+                        required=False)
 
     parser.add_argument('--predictions_path',
                         type=str,
