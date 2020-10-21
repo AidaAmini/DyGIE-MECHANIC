@@ -21,7 +21,8 @@ if __name__ == '__main__':
 
     parser.add_argument('--sent_trans_path',
                         type=Path,
-                        help='path to sentence transformer model, created with training_multi-task.py. Should be something like ../biomed_roberta_base-2020-06-18_00-15-06/0_Transformer. ',
+                        help='path/name of sentence transformer model. could be created with training_multi-task.py. Should be something like ../biomed_roberta_base-2020-06-18_00-15-06/0_Transformer. ',
+                        default="sentence-transformers/'distilroberta-base-paraphrase-v1",
                         required=True)
 
     parser.add_argument('--predictions_path',
@@ -29,7 +30,7 @@ if __name__ == '__main__':
                         required=True,
                         help="location of predicted relations tsv")
 
-   parser.add_argument('--create_embed_index',
+    parser.add_argument('--create_embed_index',
                         action='store_true',
                         help = "if specified, will create new FAISS embeding index; otherwise, will load existing")
 
@@ -46,8 +47,8 @@ if __name__ == '__main__':
 
     parser.add_argument('--task',
                         type=str,
-                        required=True,
-                        choices =["ai,"scifact"],
+                        required=False,
+                        choices =["ai","scifact"],
                         help="which evaluation task")
 
             
@@ -63,7 +64,7 @@ if __name__ == '__main__':
     if args.create_embed_index:
         #create index
         #uniqueindex is your list of terms
-        embeddings = Embeddings({"method": "transformers", "path": sentence_transformer_path.__str__()})
+        embeddings = Embeddings({"method": "transformers", "path": sentence_transformer_path.__str__(),"quantize":True})
         embeddings.index([(uid, text, None) for uid, text in enumerate(uniqueterms)])
         embeddings.save("embedding_index")
     else:
