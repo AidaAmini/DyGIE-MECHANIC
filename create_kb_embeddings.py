@@ -12,7 +12,7 @@ from tqdm import tqdm
 import pickle
 
 
-"""python create_kb_embeddings.py --predictions_path ../complete_KB_coref.tsv --embeddings_index_path distil_embedding_index""" 
+"""python create_kb_embeddings.py --sent_trans_path ../distilroberta-base-paraphrase-v1/0_Transformer/ --predictions_path ../complete_KB_coref.tsv --embeddings_index_path distil_embedding_index""" 
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser() 
@@ -20,7 +20,7 @@ if __name__ == '__main__':
     parser.add_argument('--sent_trans_path',
                         type=Path,
                         help='path/name of sentence transformer model. could be created with training_multi-task.py. Should be something like ../biomed_roberta_base-2020-06-18_00-15-06/0_Transformer. ',
-                        default="sentence-transformers/'distilroberta-base-paraphrase-v1",
+                        default="sentence-transformers/distilroberta-base-paraphrase-v1",
                         required=False)
 
     parser.add_argument('--predictions_path',
