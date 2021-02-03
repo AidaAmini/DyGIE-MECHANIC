@@ -12,4 +12,4 @@ wget https://ai2-s2-cofie.s3-us-west-2.amazonaws.com/data.zip
 tar -xf $out_dir/data.zip -C $out_dir
 
 # Clean up.
-rm $out_dir/*.zip
+rm data.zip
