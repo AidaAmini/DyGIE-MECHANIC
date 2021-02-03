@@ -9,7 +9,7 @@ mkdir $out_dir
 wget https://ai2-s2-cofie.s3-us-west-2.amazonaws.com/data.zip
 
 # Decompress.
-tar -xf $out_dir/data.zip -C $out_dir
+unzip -xf $out_dir/data.zip -C $out_dir
 
 # Clean up.
 rm data.zip
