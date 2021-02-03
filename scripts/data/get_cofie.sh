@@ -6,7 +6,7 @@ out_dir=data/
 mkdir $out_dir
 
 # Download.
-wget https://ai2-s2-cofie.s3-us-west-2.amazonaws.com/data.tar.gz
+wget https://ai2-s2-cofie.s3-us-west-2.amazonaws.com/data.zip
 
 # Decompress.
 tar -xf $out_dir/data.tar.gz -C $out_dir
