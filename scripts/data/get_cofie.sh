@@ -4,12 +4,13 @@
 
 out_dir=data/
 mkdir $out_dir
+cd $out_dir
 
 # Download.
 wget https://ai2-s2-cofie.s3-us-west-2.amazonaws.com/data.zip
 
 # Decompress.
-unzip -xf $out_dir/data.zip -C $out_dir
+unzip  data.zip 
 
 # Clean up.
 rm data.zip
