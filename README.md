@@ -1,5 +1,5 @@
 
-This repository contains models, datasets and experiments described in [Extracting a Knowledge Base of Mechanisms from COVID-19 Papers](https://arxiv.org/pdf/2010.03824.pdf).
+We introduce a novel schema for `mechanisms` that generalizes across many types of activities, functions and influences in scientific literature. This repository contains models, datasets and experiments described in our NAACL 2021 paper: [Extracting a Knowledge Base of Mechanisms from COVID-19 Papers](https://arxiv.org/pdf/2010.03824.pdf).
 
 <img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE.png" width="400" height="400"> <img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE-G.png" width="375" height="300" style="vertical-align: top;">
 
@@ -154,7 +154,7 @@ If using our dataset and models, please cite:
 @inproceedings{amini-hope-2020-cofie,
     title={{Extracting a Knowledge Base of Mechanisms from COVID-19 Papers
 }},
-    author={Tom Hope and Aida Amini and David Wadden and Madeleine van Zuylen and E. Horvitz and Roy Schwartz and Hannaneh Hajishirzi},
+    author={Tom Hope and Aida Amini and David Wadden and Madeleine van Zuylen and Sravanthi Parasa and Eric Horvitz and Daniel Weld and Roy Schwartz and Hannaneh Hajishirzi},
     year={2020},
     url={https://arxiv.org/pdf/2010.03824.pdf}
 }
