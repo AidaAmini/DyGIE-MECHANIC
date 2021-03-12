@@ -1,6 +1,4 @@
 
-# COFIE: COVID-19 Open Functional Information Extraction
-
 This repository contains models, datasets and experiments described in [Extracting a Knowledge Base of Mechanisms from COVID-19 Papers](https://arxiv.org/pdf/2010.03824.pdf).
 
 <img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE.png" width="400" height="400"> <img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE-G.png" width="375" height="300" style="vertical-align: top;">
