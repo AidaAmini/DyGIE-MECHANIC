@@ -151,12 +151,12 @@ for granular relations.
 If using our dataset and models, please cite:
 
 ```
-@inproceedings{amini-hope-2020-cofie,
+@inproceedings{mechanisms21,
     title={{Extracting a Knowledge Base of Mechanisms from COVID-19 Papers
 }},
     author={Tom Hope and Aida Amini and David Wadden and Madeleine van Zuylen and Sravanthi Parasa and Eric Horvitz and Daniel Weld and Roy Schwartz and Hannaneh Hajishirzi},
-    year={2020},
-    url={https://arxiv.org/pdf/2010.03824.pdf}
+    year={2021},
+    journal={NAACL}
 }
 ```
 
