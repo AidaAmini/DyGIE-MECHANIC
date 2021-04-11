@@ -1,7 +1,7 @@
 
 We introduce a novel schema for `mechanisms` that generalizes across many types of activities, functions and influences in scientific literature. This repository contains models, datasets and experiments described in our NAACL 2021 paper: [Extracting a Knowledge Base of Mechanisms from COVID-19 Papers](https://arxiv.org/pdf/2010.03824.pdf).
 
-<img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/teaserNEW.pdf" width="400" height="400"> <img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE-G.png" width="375" height="300" style="vertical-align: top;">
+<img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/teaser.png" width="400" height="400"> <img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE-G.png" width="375" height="300" style="vertical-align: top;">
 
 * Please cite our paper if you use our datasets or models in your project. See the [BibTeX](#citation). 
 * Feel free to [email us](#contact-us).
