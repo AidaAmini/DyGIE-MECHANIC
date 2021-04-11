@@ -1,7 +1,7 @@
 
 We introduce a novel schema for `mechanisms` that generalizes across many types of activities, functions and influences in scientific literature. This repository contains models, datasets and experiments described in our NAACL 2021 paper: [Extracting a Knowledge Base of Mechanisms from COVID-19 Papers](https://arxiv.org/pdf/2010.03824.pdf).
 
-<img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE.png" width="400" height="400"> <img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE-G.png" width="375" height="300" style="vertical-align: top;">
+<img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/teaserNEW.pdf" width="400" height="400"> <img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE-G.png" width="375" height="300" style="vertical-align: top;">
 
 * Please cite our paper if you use our datasets or models in your project. See the [BibTeX](#citation). 
 * Feel free to [email us](#contact-us).
@@ -11,7 +11,7 @@ We provide two annotated datasets:
 - Coarse-grained mechanism relations (`Direct` and `Indirect`)
 - Granular mechanism relations (`Subject-Predicate-Object`)
 
-From project root, run `scripts/data/get_cofie.sh` to download both datasets to the `data` directory.
+From project root, run `scripts/data/get_MANE.sh` to download both datasets to the `data` directory.
 - Coarse-grained relations will be downloaded to `data/cofie/[train,dev,test].json`. Development and test sets for are also available in tabular format: `data/cofie-gold/[dev,test]-gold.tsv`
 - Granular relations will be downloaded to `data/cofie-g/split/[train,dev,test].json`. Tabular format:`data/cofie-g-gold/[dev,test]-gold.tsv`
 
@@ -21,7 +21,7 @@ We provide models pre-trained on both datasets.
 
 ### Downloads
 
-From project root, run `scripts/pretrained/get_cofie_pretrained.sh` to download all the available pretrained models to the `pretrained` directory. If you only want one model, here are the download links.
+From project root, run `scripts/pretrained/get_MANE_pretrained.sh` to download all the available pretrained models to the `pretrained` directory. If you only want one model, here are the download links.
 
 - [Coarse relation prediction model](https://ai2-s2-cofie.s3-us-west-2.amazonaws.com/models/binary-model.tar.gz)
 - [Granular relation prediction model](https://ai2-s2-cofie.s3-us-west-2.amazonaws.com/models/ternary-model.tar.gz)
@@ -36,7 +36,7 @@ From project root, run `scripts/pretrained/get_cofie_pretrained.sh` to download 
 ## Dependencies
 This code repository is forked from [DYGIE++](https://github.com/dwadden/dygiepp/blob/allennlp-v1), [Wadden 2019.](https://www.semanticscholar.org/paper/Entity%2C-Relation%2C-and-Event-Extraction-with-Span-Wadden-Wennberg/fac2368c2ec81ef82fd168d49a0def2f8d1ec7d8)
 
-This code was developed using Python 3.7. To create a new Conda environment using Python 3.7, do `conda create --name cofie python=3.7`.
+This code was developed using Python 3.7. To create a new Conda environment using Python 3.7, do `conda create --name MANE python=3.7`.
 
 This library relies on [AllenNLP](https://allennlp.org) and uses AllenNLP shell [commands](https://docs.allennlp.org/master/#package-overview) to kick off training, evaluation, and testing.
 
