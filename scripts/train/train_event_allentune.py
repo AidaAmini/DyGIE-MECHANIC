@@ -19,7 +19,7 @@ import pathlib
 
 """
 Usage:
-python scripts/train/train_event_allentune.py --data_dir data/processed/collated_events/ --serial_dir ./models/events --gpu_count 4 --device 0,1,2,3
+python scripts/train/train_granular_allentune.py --data_dir data/mechanic/granular/ --serial_dir ./models/granular --gpu_count 4 --device 0,1,2,3
 """
 
 

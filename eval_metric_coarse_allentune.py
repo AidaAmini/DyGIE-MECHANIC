@@ -12,8 +12,8 @@ from pathlib import Path
 import pandas as pd
 """
 Usage:
-python eval_metric_allentune.py --pred_path ./predictions/cofie/ --gold_path ./cofie-gold
-python eval_metric_allentune.py --pred_path ./predictions/cofie/ --gold_path ./gold-gold/ --test_data --test_index 14
+python eval_metric_coarse_allentune.py --pred_path ./predictions/coarse/ --gold_path ./data/mechanic/coarse-gold/
+python eval_metric_coarse_allentune.py --pred_path ./predictions/coarse/ --gold_path ./data/mechanic/coarse-gold/ --test_data --test_index 14
 """
 
 if __name__ == '__main__':

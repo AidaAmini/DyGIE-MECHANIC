@@ -10,8 +10,8 @@ import pathlib
 
 """
 Usage
-python scripts/train/train_allentune.py --data_dir data/cofie --device 0,1,2,3
-python scripts/train/train_allentune.py --data_dir data/cofie --device 0,1,2,3 --serial_dir models/cofie/
+python scripts/train/train_coarse_allentune.py --data_dir data/mechanic/coarse --device 0,1,2,3
+python scripts/train/train_coarse_allentune.py --data_dir data/mechanic/coarse --device 0,1,2,3 --serial_dir models/coarse/
 
 
 """

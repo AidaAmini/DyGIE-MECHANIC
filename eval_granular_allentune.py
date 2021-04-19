@@ -13,8 +13,8 @@ import pandas as pd
 from tabulate import tabulate
 """
 Usage:
-python eval_event_allentune.py --pred_path ./predictions/cofie-t/ --gold_path ./cofie-t-gold/
-python eval_event_allentune.py --pred_path ./predictions/cofie-t/ --gold_path ./cofie-t-gold/ --test_data --test_index 17
+python eval_granular_allentune.py --pred_path ./predictions/granular/ --gold_path ./data/mechanic/granular-gold/
+python eval_granular_allentune.py --pred_path ./predictions/granular/ --gold_path ./data/mechanic/granular-gold/ --test_data --test_index 17
 """
 
 if __name__ == '__main__':

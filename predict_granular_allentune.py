@@ -14,8 +14,8 @@ import pandas as pd
 from decode import decode
 """
 Usage:
-python predict_event_allentune.py --serial_dir ./models/cofie-t --data_dir ./data/cofie-t/ --pred_dir ./predictions/cofie-t 
-python predict_event_allentune.py --serial_dir ./models/cofie-t --data_dir ./data/cofie-t/ --pred_dir ./predictions/cofie-t --test_data --test_index 17
+python predict_granular_allentune.py --serial_dir ./models/granular --data_dir ./data/mechanic/granular --pred_dir ./predictions/granular 
+python predict_granular_allentune.py --serial_dir ./models/granular --data_dir ./data/mechanic/granular --pred_dir ./predictions/granular --test_data --test_index 17
 """
 
 

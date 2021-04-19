@@ -14,8 +14,8 @@ import pandas as pd
 from decode import decode
 """
 Usage
-python predict_ternary.py --data_path data/cofie --device 0,1,2,3 --serial_dir models/cofie-t/collated 
-python predict_ternary.py --data_path data/cofie --device 0,1,2,3 --serial_dir models/cofie-t/collated  --pred_dir predictions/cofie-t
+python predict_granular.py --data_path data/mechanic/granular --device 0,1,2,3 --serial_dir models/granular/ 
+python predict_granular.py --data_path data/mechanic/granular --device 0,1,2,3 --serial_dir models/granular/  --pred_dir predictions/granular
 
 """
 

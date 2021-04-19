@@ -1,7 +1,7 @@
 
 We introduce a novel schema for `mechanisms` that generalizes across many types of activities, functions and influences in scientific literature. This repository contains models, datasets and experiments described in our NAACL 2021 paper: [Extracting a Knowledge Base of Mechanisms from COVID-19 Papers](https://arxiv.org/pdf/2010.03824.pdf).
 
-<img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/teaser.png" width="500" height="400"> <img src="https://github.com/AidaAmini/DyGIE-COFIE/blob/master/COFIE-G.png" width="375" height="300" style="vertical-align: top;">
+<img src="https://github.com/AidaAmini/DyGIE-MECHANIC/blob/master/teaser.png" width="500" height="400"> <img src="https://github.com/AidaAmini/DyGIE-MECHANIC/blob/master/COFIE-G.png" width="375" height="300" style="vertical-align: top;">
 
 * Please cite our paper if you use our datasets or models in your project. See the [BibTeX](#citation). 
 * Feel free to [email us](#contact-us).
@@ -11,9 +11,9 @@ We provide two annotated datasets:
 - Coarse-grained mechanism relations (`Direct` and `Indirect`)
 - Granular mechanism relations (`Subject-Predicate-Object`)
 
-From project root, run `scripts/data/get_MANE.sh` to download both datasets to the `data` directory.
-- Coarse-grained relations will be downloaded to `data/cofie/[train,dev,test].json`. Development and test sets for are also available in tabular format: `data/cofie-gold/[dev,test]-gold.tsv`
-- Granular relations will be downloaded to `data/cofie-g/split/[train,dev,test].json`. Tabular format:`data/cofie-g-gold/[dev,test]-gold.tsv`
+From project root, run `scripts/data/get_mechanic.sh` to download both datasets to the `data` directory.
+- Coarse-grained relations will be downloaded to `data/mechanic/coarse/[train,dev,test].json`. Development and test sets for are also available in tabular format: `data/mechanic/coarse-gold/[dev,test]-gold.tsv`
+- Granular relations will be downloaded to `data/mechanic/granular/[train,dev,test].json`. Tabular format:`data/mechanic/granular-gold/[dev,test]-gold.tsv`
 
 
 ## Pretrained models
@@ -21,10 +21,10 @@ We provide models pre-trained on both datasets.
 
 ### Downloads
 
-From project root, run `scripts/pretrained/get_MANE_pretrained.sh` to download all the available pretrained models to the `pretrained` directory. If you only want one model, here are the download links.
+From project root, run `scripts/pretrained/get_mechanic_pretrained.sh` to download all the available pretrained models to the `pretrained` directory. If you only want one model, here are the download links.
 
-- [Coarse relation prediction model](https://ai2-s2-cofie.s3-us-west-2.amazonaws.com/models/binary-model.tar.gz)
-- [Granular relation prediction model](https://ai2-s2-cofie.s3-us-west-2.amazonaws.com/models/ternary-model.tar.gz)
+- [Coarse relation prediction model](https://s3-us-west-2.amazonaws.com/ai2-s2-mechanic/models/mechanic-coarse.tar.gz)
+- [Granular relation prediction model](https://s3-us-west-2.amazonaws.com/ai2-s2-mechanic/models/mechanic-granular.tar.gz)
 
 ## Table of Contents
 - [Dependencies](#dependencies)
@@ -36,7 +36,7 @@ From project root, run `scripts/pretrained/get_MANE_pretrained.sh` to download a
 ## Dependencies
 This code repository is forked from [DYGIE++](https://github.com/dwadden/dygiepp/blob/allennlp-v1), [Wadden 2019.](https://www.semanticscholar.org/paper/Entity%2C-Relation%2C-and-Event-Extraction-with-Span-Wadden-Wennberg/fac2368c2ec81ef82fd168d49a0def2f8d1ec7d8)
 
-This code was developed using Python 3.7. To create a new Conda environment using Python 3.7, do `conda create --name MANE python=3.7`.
+This code was developed using Python 3.7. To create a new Conda environment using Python 3.7, do `conda create --name mechanic python=3.7`.
 
 This library relies on [AllenNLP](https://allennlp.org) and uses AllenNLP shell [commands](https://docs.allennlp.org/master/#package-overview) to kick off training, evaluation, and testing.
 
@@ -65,12 +65,12 @@ pip install -r requirements.txt
 To make a prediction, you can use `allennlp predict`. For example, to make a prediction with a pretrained granular relation model:
 
 ```bash
-allennlp predict pretrained/ternary-model.tar.gz \
-    data/cofie-g/split/test.json \
+allennlp predict pretrained/mechanic-granular.tar.gz \
+    data/mechanic/granular/test.json \
     --predictor dygie \
     --include-package dygie \
     --use-dataset-reader \
-    --output-file predictions/cofie-g-test.jsonl \
+    --output-file predictions/granular-test.jsonl \
     --cuda-device 0 \
     --silent
 ```
@@ -78,12 +78,12 @@ allennlp predict pretrained/ternary-model.tar.gz \
 For predicting coarse relations using a pretrained model:
 
 ```bash
-allennlp predict pretrained/binary.tar.gz \
-    data/cofie/test.json \
+allennlp predict pretrained/mechanic-coarse.tar.gz \
+    data/mechanic/coarse/test.json \
     --predictor dygie \
     --include-package dygie \
     --use-dataset-reader \
-    --output-file predictions/cofie-test.jsonl \
+    --output-file predictions/coarse-test.jsonl \
     --cuda-device 0 \
     --silent
 ```
@@ -94,12 +94,12 @@ Running these commands will provide json-formatted predictions.
 Alternatively you can use the predict scripts provided by this library to generate both .tsv and .json file. You can use :
 
 ```bash
-python predict_binary.py --data_dir data/cofie --device 0 --serial_dir pretrained/binary-model.tar.gz  --pred_dir predictions/cofie-test/
+python predict_coarse.py --data_dir data/mechanic/coarse --device 0 --serial_dir pretrained/mechanic-coarse.tar.gz  --pred_dir predictions/coarse-test/
 ```
 for coarse relation predictions and
 
 ```bash
-python predict_ternary.py --data_dir data/cofie-g/collated --device 0 --serial_dir pretrained/ternary-model.tar.gz  --pred_dir predictions/cofie-t-test/
+python predict_granular.py --data_dir data/mechanic/granular --device 0 --serial_dir pretrained/mechanic-granular.tar.gz  --pred_dir predictions/granular-test/
 ```
 for granular relation predictions.
 
@@ -112,36 +112,36 @@ We report `Precision/Recall/F1` measured by using exact and partial span-matchin
 We use Allentune for hyperparameter tuning. To train a model for coarse relation extraction using Allentune, you can run the script below.
 
 ```bash
-python scripts/train/train_allentune.py --data_dir data/cofie --device 0,1,2,3 --serial_dir models/cofie/ --gpu_count 4 --cpu_count 12 --device 0,1,2,3
+python scripts/train/train_coarse_allentune.py --data_dir data/mechanic/coarse/ --device 0,1,2,3 --serial_dir models/coarse/ --gpu_count 4 --cpu_count 12 --device 0,1,2,3
 ```
 
 To train the model for granular relations:
 ```bash
-python scripts/train/train_event_allentune.py --data_dir data/processed/collated_events/ --serial_dir ./models/events --gpu_count 4 --cpu_count 12 --device 0,1,2,3
+python scripts/train/train_granular_allentune.py --data_dir data/mechanic/granular/ --serial_dir ./models/granular --gpu_count 4 --cpu_count 12 --device 0,1,2,3
 ```
 
 The default number of training samples is set to 30. For more training options please use the `--h` command.
 
 To obtain predictions for the development set over all Allentune runs:
 ```bash
-python predict.py --data_dir data/cofie --device 0 --serial_dir models/cofie/
+python predict_coarse_allentune.py --data_dir data/mechanic/coarse/ --device 0 --serial_dir models/coarse/ --pred_dir predictions/coarse
 ```
 for the coarse relation model and
 
 ```bash
-python predict_event_allentune.py --serial_dir ./models/cofie-t --data_dir ./data/cofie-t/ --pred_dir ./predictions/cofie-t
+python predict_granular_allentune.py --serial_dir ./models/granular --data_dir ./data/mechanic/granular/ --pred_dir ./predictions/granular/
 ```
 for the granular relation model.
 
 You can get test set predcitions by indicating only the run index you want to use for inference:
 
 ```bash
-python predict.py --data_dir data/cofie --device 0,1,2,3 --serial_dir models/cofie/  --pred_dir predictions/cofie
+python predict_coarse_allentune.py --data_dir data/mechanic/coarse/ --device 0,1,2,3 --serial_dir models/coarse/  --pred_dir predictions/coarse
 ```
 for coarse relations and
 
 ```bash
-python predict_event_allentune.py --serial_dir ./models/cofie-t --data_dir ./data/cofie-t/ --pred_dir ./predictions/cofie-t --test_data --test_index 17
+python predict_granular_allentune.py --serial_dir ./models/granular --data_dir ./data/mechanic/granular/ --pred_dir ./predictions/granular/ --test_data --test_index 17
 ```
 for granular relations.
 

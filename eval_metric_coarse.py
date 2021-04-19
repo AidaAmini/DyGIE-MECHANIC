@@ -14,9 +14,8 @@ from tabulate import tabulate
 
 """
 Usage:
-source activate covid_eval
-python eval_metric.py --gold_dir ./cofie-gold/ --pred_dir ./predictions/cofie/
-python eval_metric.py --gold_dir ./cofie-gold/ --pred_dir ./predictions/cofie/  --latex_print
+python eval_metric_coarse.py --gold_dir ./data/mechanic/coarse-gold/ --pred_dir ./predictions/coarse/
+python eval_metric_coarse.py --gold_dir ./data/mechanic/coarse-gold/ --pred_dir ./predictions/coarse/  --latex_print
 """
 
 if __name__ == '__main__':

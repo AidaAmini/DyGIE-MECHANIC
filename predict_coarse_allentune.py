@@ -11,8 +11,8 @@ from pathlib import Path
 
 """
 Usage
-python predict.py --data_dir data/cofie --device 0,1,2,3 --serial_dir models/cofie/ 
-python predict.py --data_dir data/cofie --device 0,1,2,3 --serial_dir models/cofie/  --pred_dir predictions/cofie
+python predict_coarse_allentune.py --data_dir data/mechanic/coarse --device 0,1,2,3 --serial_dir models/coarse/ 
+python predict_coarse_allentune.py --data_dir data/mechanic/coarse --device 0,1,2,3 --serial_dir models/coarse/  --pred_dir predictions/coarse
 """
 
 
