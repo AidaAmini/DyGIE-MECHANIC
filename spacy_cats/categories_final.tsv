@@ -1,0 +1,125 @@
+Organism	Organism	1.0
+Plant	Organism	0
+Fungus	Organism	0.5002939866425961
+Virus	Disease	1.0
+Bacterium	Organism	0.5300160548266828
+Animal	Organism	1.0
+Vertebrate	Organism	0.49011890051551016
+Amphibian	Organism	0.45157635684712105 Bird	Organism	0 Fish	Organism	0.4031272732315816
+Reptile	Organism	0.467834893755051
+Mammal	Organism	0.49350793029160556
+Human	Organism	0
+Anatomical Structure	Anatomical Structure	0
+Embryonic Structure	Anatomical Structure	0
+Congenital Abnormality	Symptom	0.3973905941325065
+Acquired Abnormality	Symptom	0.4233347428785283
+Fully Formed Anatomical Structure	Anatomical Structure	0
+Body System	Anatomical Structure	0.7525274626896906
+Body Part, Organ, or Organ Component	Anatomical Structure	0.819279997176884
+Tissue	Anatomical Structure	0.5466195137802886
+Cell	Organism	1.0
+Cell Component	Organism	0.7227659224678998
+Gene or Genome	Gene	0
+Body Location or Region	Anatomical Structure	0.7182060300832498
+Body Space or Junction	Anatomical Structure	0.6828323501687819
+Body Substance	Drug	0
+Organism Attribute	Organism	0.9148434555932553
+Finding	Finding	1.0
+Laboratory or Test Result	Finding	0
+Injury or Poisoning	Disease	0.4890801406735647
+Biologic Function	Concept	0.6072931542823402
+Physiologic Function	Concept	0.595700819907736
+Organism Function	Organism	0.876105247946436
+Mental Process	Concept	0.61318741889252
+Organ or Tissue Function	Anatomical Structure	0.8319489988413739
+Cell Function	Organism	0.8311242629345136
+Molecular Function	Molecule	0.5936654262899775
+Genetic Function	Gene	0
+Pathologic Function	Disease	0
+Disease or Syndrome	Disease	0.8558072822216549
+Mental or Behavioral Dysfunction	Behavior	0.7420326238952734
+Cell or Molecular Dysfunction	Molecule	0.7697442057705951
+Experimental Model of Disease	Disease	0.7799196487006516
+Event	Activity	0
+Activity	Activity	0
+Behavior	Behavior	1.0
+Social Behavior	Behavior	0.8983005401483305
+Individual Behavior	Behavior	0.9105899240322027
+Daily or Recreational Activity	Activity	0
+Occupational Activity	Activity	0
+Health Care Activity	Activity	0.7252438367569979
+Laboratory Procedure	Procedure	0.7781812956761132
+Diagnostic Procedure	Procedure	0.8082163266153994
+Therapeutic or Preventive Procedure	Procedure	0.6900066705032869
+Research Activity	Activity	0
+Molecular Biology Research Technique	Procedure	0
+Governmental or Regulatory Activity	Regulatory	0
+Educational Activity	Activity	0
+Machine Activity	Activity	0
+Phenomenon or Process	Concept	0
+Human-caused Phenomenon or Process	Concept	0
+Environmental Effect of Humans	Behavior	0
+Natural Phenomenon or Process	Concept	0.6894557572658195
+Entity	Concept	0.6238369320087882
+Physical Object	Concept	0.6045064854525082
+Manufactured Object	Product	0
+Medical Device	Medical Device	1.0
+Research Device	Medical Device	0.9122213521903858
+Conceptual Entity	Concept	0.714426183754309
+Idea or Concept	Concept	0.8652446267710272
+Temporal Concept	Concept	0.7673046662075632
+Qualitative Concept	Concept	0.7646964706516398
+Quantitative Concept	Concept	0.6874454108504489
+Spatial Concept	Concept	0.8217367917506884
+Geographic Area	Group/Organization	0
+Molecular Sequence	Molecule	0.48071942946188406
+Nucleotide Sequence	Molecule	0
+Amino Acid Sequence	Molecule	0.5136599389882041
+Carbohydrate Sequence	Molecule	0.5337760791341941
+Regulation or Law	Regulatory	0
+Occupation or Discipline	Group/Organization	0
+Biomedical Occupation or Discipline	Group/Organization	0
+Organization	Group/Organization	1.0
+Health Care Related Organization	Group/Organization	0.8047047801060083
+Professional Society	Group/Organization	0
+Self-help or Relief Organization	Group/Organization	0.7717048210262579
+Group	Group/Organization	1.0
+Professional or Occupational Group	Group/Organization	0
+Population Group	Group/Organization	0.8129992208073002
+Family Group	Group/Organization	0.8377954096406423
+Age Group	Group/Organization	0.7714322126790947
+Patient or Disabled Group	Group/Organization	0.703478214755629
+Group Attribute	Group/Organization	0.7661031186876013
+Chemical	Chemical		0.8360416449655284
+Chemical Viewed Structurally	Chemical		0.65724305303305
+Organic Chemical	Chemical		1.0
+Nucleic Acid, Nucleoside, or Nucleotide	Molecule	0.4958391451628369
+Amino Acid, Peptide, or Protein	Molecule	0.5268762817703888
+Chemical Viewed Functionally	Chemical		0.6377126645466212
+Pharmacologic Substance	Drug	0.46384199857450437
+Biomedical or Dental Material	Medical Device	0.6237722631738606
+Biologically Active Substance	Chemical		0
+Hormone	Molecule	0.3539162300599165
+Enzyme	Molecule	0
+Vitamin	Molecule	0
+Immunologic Factor	Symptom	0.44936201454700675
+Indicator, Reagent, or Diagnostic Aid	Medical Device	0.6072020131449922
+Hazardous or Poisonous Substance	Disease	0
+Substance	Drug	0.47300260149357726
+Food	None	0
+Functional Concept	Concept	0.8437683173878041
+Intellectual Product	Product	0.7836076151008031
+Language	None	0
+Sign or Symptom	Symptom	0.84184843944802
+Classification	Group/Organization	0.5446971815727152
+Anatomical Abnormality	Concept	0.5017584638224962
+Neoplastic Process	Concept	0.5793355160312057
+Receptor	Molecule	0.6248259544810372
+Archaeon	Organism	0.3051970205790313
+Antibiotic	Drug	0.4175923800814609
+Element, Ion, or Isotope	Chemical		0.5768011263575029
+Inorganic Chemical	Chemical		0.8887497866334033
+Clinical Drug	Drug	0.884383344801766
+Clinical Attribute	Concept	0.6726699315184246
+Drug Delivery Device	Medical Device	0.8218020134913852
+Eukaryote	Organism	0.47443681937460963
