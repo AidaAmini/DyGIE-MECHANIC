@@ -5,7 +5,9 @@ Virus	Disease	1.0
 Bacterium	Organism	0.5300160548266828
 Animal	Organism	1.0
 Vertebrate	Organism	0.49011890051551016
-Amphibian	Organism	0.45157635684712105 Bird	Organism	0 Fish	Organism	0.4031272732315816
+Amphibian	Organism	0.45157635684712105
+Bird	Organism	0
+Fish	Organism	0.4031272732315816
 Reptile	Organism	0.467834893755051
 Mammal	Organism	0.49350793029160556
 Human	Organism	0
@@ -106,12 +108,12 @@ Immunologic Factor	Symptom	0.44936201454700675
 Indicator, Reagent, or Diagnostic Aid	Medical Device	0.6072020131449922
 Hazardous or Poisonous Substance	Disease	0
 Substance	Drug	0.47300260149357726
-Food	None	0
+Food	Other	0
 Functional Concept	Concept	0.8437683173878041
 Intellectual Product	Product	0.7836076151008031
-Language	None	0
+Language	Other	0
 Sign or Symptom	Symptom	0.84184843944802
-Classification	Group/Organization	0.5446971815727152
+Classification	Finding	0.5446971815727152
 Anatomical Abnormality	Concept	0.5017584638224962
 Neoplastic Process	Concept	0.5793355160312057
 Receptor	Molecule	0.6248259544810372
