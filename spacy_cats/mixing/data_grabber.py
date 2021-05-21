@@ -29,11 +29,28 @@ def translate_categories(translator_filename):
     file.close()
     return _dict
 
+def get_top_2(tuple_list, counters):
+    for i in range(2):
+        if len(tuple_list) > i:
+            cat = tuple_list[i][0]
+            
+            if cat not in counters:
+                counters[cat] = 1
+            else:
+                counters[cat] += 1
 
-def main(filename, translator_filename, output_filename):
+
+
+
+def main(filename, translator_filename, output_filename, output_filename2):
     output_file = open(output_filename, "w")
 
     subcats_to_cats = translate_categories(translator_filename)
+
+    # top 2 stats
+    sub_counters = {}
+    amb_counters = {}
+    cat_counters = {}
 
     for _tuple in get_span(filename):
         span = _tuple[0]
@@ -45,6 +62,7 @@ def main(filename, translator_filename, output_filename):
         amb_count = 0
         cat_count = 0
         sub_count = len(subs)
+
 
         for sub in subs:
             if sub not in subcats_to_cats:
@@ -58,7 +76,7 @@ def main(filename, translator_filename, output_filename):
             else:
                 _dict = cat_data
                 cat_count += 1
-            
+
             # add cat to dictionary
             if cat not in _dict:
                 _dict[cat] = 1
@@ -84,8 +102,29 @@ def main(filename, translator_filename, output_filename):
         amb_data = sorted(amb_data.items(), key=lambda x: x[1], reverse=True)
         cat_data = sorted(cat_data.items(), key=lambda x: x[1], reverse=True)
 
+        # top 2 stats
+        get_top_2(sub_data, sub_counters)
+        get_top_2(amb_data, amb_counters)
+        get_top_2(cat_data, cat_counters)
+
         output_file.write(span + "\t" + str(cat_data) + "\t" + str(amb_data) + "\t" + str(sub_data) + "\n")
 
+    # top 2 stats
+    output_file2 = open(output_filename2, "w")
+        
+    output_file2.write("High Level Categories\n")
+    write_cats(cat_counters, output_file2)
+    output_file2.write("Ambigious Categories:\n")
+    write_cats(amb_counters, output_file2)
+    output_file2.write("Subcategories:\n")
+    write_cats(sub_counters, output_file2)
+
+def write_cats(counter, out):
+    total = sum(counter.values())
+    for i in counter:
+        val = counter[i]
+        prob = val / total
+        out.write(i + "\t" + str(val) + "\t" + "{:.4f}".format(prob) + "\n")
 
 
 AMBIGUOUS_CATS = ['Activity', 'Product', 'Procedure', 'Finding', 'Concept']
@@ -93,4 +132,5 @@ AMBIGUOUS_CATS = ['Activity', 'Product', 'Procedure', 'Finding', 'Concept']
 if __name__ == "__main__":
     main("/home/edan/for_edan/cofie_log.tsv",
          "/home/edan/projects/DyGIE-MECHANIC/spacy_cats/categories_final.tsv",
-         output_filename="dataset.tsv")
+         output_filename="dataset.tsv",
+         output_filename2="cats.tsv")
