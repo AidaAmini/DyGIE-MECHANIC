@@ -10,3 +10,4 @@ predictions/*
 **/stanford*/*
 scratch*
 **workspace.code-workspace
+**.vscode
