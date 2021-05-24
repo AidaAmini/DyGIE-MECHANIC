@@ -130,7 +130,7 @@ def write_cats(counter, out):
 AMBIGUOUS_CATS = ['Activity', 'Product', 'Procedure', 'Finding', 'Concept']
 
 if __name__ == "__main__":
-    main("/home/edan/for_edan/cofie_log.tsv",
+    main("/home/edan/for_edan/training_spans_subcats.tsv",
          "/home/edan/projects/DyGIE-MECHANIC/spacy_cats/categories_final.tsv",
-         output_filename="dataset.tsv",
-         output_filename2="cats.tsv")
+         output_filename="/home/edan/for_edan/training_cat_dataset.tsv",
+         output_filename2="/home/edan/for_edan/training_cat_count.tsv")
