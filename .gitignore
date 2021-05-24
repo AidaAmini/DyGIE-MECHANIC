@@ -9,3 +9,4 @@ pretrained/*
 predictions/*
 **/stanford*/*
 scratch*
+**.DS_Store
