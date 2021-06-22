@@ -10,3 +10,4 @@ class Globals():
 	CLUSTER_SIZE = 10
 	TYPE = "mean"
 	NAME = "nosymbol_revmean_10"
+	MAP = None
