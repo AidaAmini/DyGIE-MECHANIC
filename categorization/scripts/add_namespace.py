@@ -153,7 +153,6 @@ def add_dataset(subfilename, test=False):
         if test==True:
             doc_key = line_json["doc_key"]
             top_n = get_top_n(Globals.MAP[doc_key], 3)
-            print(top_n)
 
             for dataset in top_n:
                 line_json["dataset"] = dataset

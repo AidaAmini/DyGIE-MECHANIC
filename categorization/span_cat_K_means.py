@@ -1,3 +1,7 @@
+"""
+This file generates a kmeans cluster based on the provided input path and saves it to an output file
+"""
+
 import torch
 from transformers import BertTokenizer, BertModel
 from sklearn.cluster import KMeans
