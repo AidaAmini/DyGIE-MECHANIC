@@ -1,0 +1,100 @@
+noninvasive investigation	Qualitative Concept
+noninvasive investigation	Finding
+noninvasive investigation	Qualitative Concept
+noninvasive investigation	Therapeutic or Preventive Procedure
+noninvasive investigation	Diagnostic Procedure
+long - term imaging follow	Qualitative Concept
+long - term imaging follow	Qualitative Concept
+long - term imaging follow	Medical Device
+long - term imaging follow	Body Part, Organ, or Organ Component
+long - term imaging follow	Individual Behavior
+long - term imaging follow	Idea or Concept
+long - term imaging follow	Temporal Concept
+long - term imaging follow	Organism Function
+long - term imaging follow	Intellectual Product
+long - term imaging follow	Finding
+long - term imaging follow	Diagnostic Procedure
+long - term imaging follow	Diagnostic Procedure
+long - term imaging follow	Biomedical Occupation or Discipline
+long - term imaging follow	Intellectual Product
+long - term imaging follow	Diagnostic Procedure
+long - term imaging follow - up	Qualitative Concept
+long - term imaging follow - up	Qualitative Concept
+long - term imaging follow - up	Medical Device
+long - term imaging follow - up	Body Part, Organ, or Organ Component
+long - term imaging follow - up	Individual Behavior
+long - term imaging follow - up	Idea or Concept
+long - term imaging follow - up	Temporal Concept
+long - term imaging follow - up	Organism Function
+long - term imaging follow - up	Intellectual Product
+long - term imaging follow - up	Finding
+long - term imaging follow - up	Diagnostic Procedure
+long - term imaging follow - up	Diagnostic Procedure
+long - term imaging follow - up	Biomedical Occupation or Discipline
+long - term imaging follow - up	Intellectual Product
+long - term imaging follow - up	Diagnostic Procedure
+long - term imaging follow - up	Temporal Concept
+long - term imaging follow - up	Intellectual Product
+long - term imaging follow - up	Functional Concept
+long - term imaging follow - up	Intellectual Product
+long - term imaging follow - up	Health Care Activity
+long - term imaging follow - up after flow - diverter implantation	Qualitative Concept
+long - term imaging follow - up after flow - diverter implantation	Qualitative Concept
+long - term imaging follow - up after flow - diverter implantation	Medical Device
+long - term imaging follow - up after flow - diverter implantation	Body Part, Organ, or Organ Component
+long - term imaging follow - up after flow - diverter implantation	Individual Behavior
+long - term imaging follow - up after flow - diverter implantation	Idea or Concept
+long - term imaging follow - up after flow - diverter implantation	Temporal Concept
+long - term imaging follow - up after flow - diverter implantation	Organism Function
+long - term imaging follow - up after flow - diverter implantation	Intellectual Product
+long - term imaging follow - up after flow - diverter implantation	Finding
+long - term imaging follow - up after flow - diverter implantation	Diagnostic Procedure
+long - term imaging follow - up after flow - diverter implantation	Diagnostic Procedure
+long - term imaging follow - up after flow - diverter implantation	Biomedical Occupation or Discipline
+long - term imaging follow - up after flow - diverter implantation	Intellectual Product
+long - term imaging follow - up after flow - diverter implantation	Diagnostic Procedure
+long - term imaging follow - up after flow - diverter implantation	Temporal Concept
+long - term imaging follow - up after flow - diverter implantation	Intellectual Product
+long - term imaging follow - up after flow - diverter implantation	Functional Concept
+long - term imaging follow - up after flow - diverter implantation	Intellectual Product
+long - term imaging follow - up after flow - diverter implantation	Health Care Activity
+long - term imaging follow - up after flow - diverter implantation	Natural Phenomenon or Process
+long - term imaging follow - up after flow - diverter implantation	Finding
+long - term imaging follow - up after flow - diverter implantation	Genetic Function
+long - term imaging follow - up after flow - diverter implantation	Quantitative Concept
+long - term imaging follow - up after flow - diverter implantation	Manufactured Object
+long - term imaging follow - up after flow - diverter implantation	Manufactured Object
+long - term imaging follow - up after flow - diverter implantation	Organism Function
+long - term imaging follow - up after flow - diverter implantation	Therapeutic or Preventive Procedure
+long - term imaging follow - up after flow - diverter implantation	Functional Concept
+long - term imaging follow - up after flow - diverter implantation	Functional Concept
+long - term imaging follow - up after flow - diverter implantation	Health Care Activity
+flow - diverter implantation	Natural Phenomenon or Process
+flow - diverter implantation	Finding
+flow - diverter implantation	Genetic Function
+flow - diverter implantation	Quantitative Concept
+flow - diverter implantation	Manufactured Object
+flow - diverter implantation	Manufactured Object
+flow - diverter implantation	Organism Function
+flow - diverter implantation	Therapeutic or Preventive Procedure
+flow - diverter implantation	Functional Concept
+flow - diverter implantation	Functional Concept
+flow - diverter implantation	Health Care Activity
+spatial resolution	Conceptual Entity
+spatial resolution	Quantitative Concept
+spatial resolution	Pathologic Function
+metal artifacts	Inorganic Chemical
+metal artifacts	Molecular Function
+evaluate the diagnostic value of conebeam CT angiography	Health Care Activity
+evaluate the diagnostic value of conebeam CT angiography	Health Care Activity
+evaluate the diagnostic value of conebeam CT angiography	Professional or Occupational Group
+evaluate the diagnostic value of conebeam CT angiography	Intellectual Product
+evaluate the diagnostic value of conebeam CT angiography	Health Care Activity
+evaluate the diagnostic value of conebeam CT angiography	Functional Concept
+evaluate the diagnostic value of conebeam CT angiography	Diagnostic Procedure
+evaluate the diagnostic value of conebeam CT angiography	Diagnostic Procedure
+evaluate the diagnostic value of conebeam CT angiography	Diagnostic Procedure
+evaluate the diagnostic value of conebeam CT angiography	Diagnostic Procedure
+evaluate the diagnostic value of conebeam CT angiography	Diagnostic Procedure
+assessment of vascular status	Intellectual Product
+assessment of vascular status	Health Care Activity
