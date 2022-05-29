@@ -6,6 +6,10 @@ We introduce a novel schema for `mechanisms` that generalizes across many types 
 * Please cite our paper if you use our datasets or models in your project. See the [BibTeX](#citation). 
 * Feel free to [email us](#contact-us).
 
+# News
+Check out the [DYGIE++ repo for an example notebook](https://github.com/dwadden/dygiepp/blob/master/notebooks/MECHANIC-inference-spacy.ipynb): loading a model trained on MECHANIC and extracting relations using a Spacy interface.
+
+
 # Annotated datasets
 We provide two annotated datasets:
 - Coarse-grained mechanism relations (`Direct` and `Indirect`)
